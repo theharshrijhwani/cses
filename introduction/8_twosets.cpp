@@ -1,19 +1,18 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-#define ll long long
 
 int main() {
-  ll n;
+  long long n;
   vector<int> v1, v2;
   cin >> n;
-  ll sum = n * (n + 1) / 2;
+  long long sum = n * (n + 1) / 2;
 
   if (sum % 2 != 0) {
     cout << "NO";
   } else {
     cout << "YES" << endl;
-    ll temp = sum / 2;
+    long long temp = sum / 2;
     while (n) {
       if (temp >= n) {
         v1.push_back(n);
